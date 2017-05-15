@@ -22,6 +22,7 @@
  * Param @boleonclick: //触屏设备在终端chrome浏览器,强制转到touch监听,并添加滚轮监听
  * Param @scrollbottomfn: "topmax", //top值滚动到底部
  * Param @mousewheelflag: true//默认开启模拟滚动条滚动，body区域滚动条禁止
+ * Param @getfatheridPosition:document.body//隐藏div填充区域
  * 
  */
 class shineonScroll{
@@ -48,7 +49,8 @@ class shineonScroll{
 			"touchpreventDefault":false,
 			"boleonclick": false, 
 			"scrollbottomfn": "topmax",
-			"mousewheelflag":true
+			"mousewheelflag":true,
+			"getfatheridPosition":document.body
 		}
 		var defaultinitConfig = {
 			// y轴的高度计算:父元素高度-父元素的高度除以子元素总高；
@@ -550,7 +552,7 @@ class shineonScroll{
 			inputdom.setAttribute('class', this.cfg.getfatherid)
 			inputdom.setAttribute('id', this.cfg.getfatherid)
 			inputdom.setAttribute('value', this.cfg.father)
-			document.body.appendChild(inputdom)
+			this.getfatheridPosition.appendChild(inputdom)
 		}
 		this.getId(this.cfg.father).setAttribute('wheelxory', this.cfg.wheelxory)
 		this.getId(this.cfg.getfatherid).value = this.cfg.father
