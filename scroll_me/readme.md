@@ -9,8 +9,8 @@
  		 Object.defineProperty(Vue.prototype, name, { value: ShineonScroll });
 	  }
 	}
-# 3.发布npm包（eg:scroll_djl）
-# 4.npm安装scroll_djl
+# 3.发布npm包（eg:scroll_me）
+# 4.npm安装scroll_me
 # 5.在路由中引入shineonescroll,并使用vue.use()安装js插件（安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。如果插件是一个函数，它会被作为 install 方法。install 方法将被作为 Vue 的参数调用。）
 	import ShineonScroll from 'scroll_me'
 	Vue.use(ShineonScroll)
