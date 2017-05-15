@@ -681,3 +681,6 @@ export default class {
 		}
 	}
 }
+export function ShineonScroll(param) {
+	return new shineonScroll(param)
+}
