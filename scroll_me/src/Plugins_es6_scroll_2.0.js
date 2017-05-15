@@ -552,7 +552,7 @@ class shineonScroll{
 			inputdom.setAttribute('class', this.cfg.getfatherid)
 			inputdom.setAttribute('id', this.cfg.getfatherid)
 			inputdom.setAttribute('value', this.cfg.father)
-			this.getfatheridPosition.appendChild(inputdom)
+			this.cfg.getfatheridPosition.appendChild(inputdom)
 		}
 		this.getId(this.cfg.father).setAttribute('wheelxory', this.cfg.wheelxory)
 		this.getId(this.cfg.getfatherid).value = this.cfg.father
