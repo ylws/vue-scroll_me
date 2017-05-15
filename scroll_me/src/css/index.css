@@ -1,0 +1,41 @@
+/*模拟滚动条*/
+.scrollson{
+/*		background: rgba(255,255,255,0.5);*/
+	float: left;
+	width: 100%;
+}
+.scroll_y{
+	background: #f6f6f6;
+	position: absolute;
+	right: 2px;
+	width: 11px;
+}
+.scroll_x{
+	background: #f6f6f6;
+	position: absolute;
+	bottom: 2px;
+	height: 11px;
+}
+.scroll_ymove{
+	background: #dedede;
+	display: none;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	width: 15px;
+	z-index: 2;
+}
+.scroll_xmove{
+	background: #dedede;
+	display: none;
+	height: 15px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 1;
+}
+.scrollfather{
+	height: 200px;
+	overflow: hidden;
+	width: 200px;
+}

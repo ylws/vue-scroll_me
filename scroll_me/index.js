@@ -1,0 +1,1 @@
+module.exports=require('./src/Plugins_es6_scroll_2.0.js')
