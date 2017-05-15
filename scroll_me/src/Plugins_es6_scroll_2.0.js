@@ -24,7 +24,7 @@
  * Param @mousewheelflag: true//默认开启模拟滚动条滚动，body区域滚动条禁止
  * 
  */
-export default class {
+class shineonScroll{
 	constructor(opt) {
 		this.initVal(opt)
 	}
