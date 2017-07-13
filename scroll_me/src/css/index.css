@@ -1,41 +1,44 @@
+@charset "UTF-8";
 /*模拟滚动条*/
-.scrollson{
-/*		background: rgba(255,255,255,0.5);*/
-	float: left;
-	width: 100%;
+.scrollfather {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
 }
-.scroll_y{
-	background: #f6f6f6;
-	position: absolute;
-	right: 2px;
-	width: 11px;
+.scrollfather .scrollson {
+  float: left;
+  width: 100%;
 }
-.scroll_x{
-	background: #f6f6f6;
-	position: absolute;
-	bottom: 2px;
-	height: 11px;
+.scrollfather .scroll_ymove {
+  background: #f1f1f1;
+  display: none;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 4px;
+  z-index: 2;
 }
-.scroll_ymove{
-	background: #dedede;
-	display: none;
-	height: 100%;
-	position: absolute;
-	right: 0;
-	width: 15px;
-	z-index: 2;
+.scrollfather .scroll_ymove .scroll_y {
+  background: #999;
+  position: absolute;
+  right: 0px;
+  width: 4px;
 }
-.scroll_xmove{
-	background: #dedede;
-	display: none;
-	height: 15px;
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	z-index: 1;
+.scrollfather .scroll_xmove {
+  background: #f1f1f1;
+  display: none;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 }
-.scrollfather{
-	height: 200px;
-	overflow: hidden;
-	width: 200px;
+.scrollfather .scroll_xmove .scroll_x {
+  background: #999;
+  position: absolute;
+  bottom: 0px;
+  height: 4px;
 }
+
+/*# sourceMappingURL=scroll.css.map */
