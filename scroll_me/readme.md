@@ -1,19 +1,19 @@
 # 1.原生js文件导出实例化方法（可传参）
-	export function ShineonScroll(param) {
-		return new shineonScroll(param)
+	export function CFCMScroll(param) {
+		return new CFCMScroll(param)
 	}
-# 2.npm包index文件接收ShineonScroll参数，并把该参数添加到vue原型对象里面
-	import {ShineonScroll} from './src/Plugins_es6_scroll_2.0.js'
+# 2.npm包index文件接收CFCMScroll参数，并把该参数添加到vue原型对象里面
+	import {CFCMScroll} from './src/Plugins_es6_scroll_2.0.js'
 	export default {
 	 	install: function(Vue, name = '$Scroll') {
- 		 Object.defineProperty(Vue.prototype, name, { value: ShineonScroll });
+ 		 Object.defineProperty(Vue.prototype, name, { value: CFCMScroll });
 	  }
 	}
 # 3.发布npm包（eg:scroll_me）
 # 4.npm安装scroll_me
-# 5.在路由中引入shineonescroll,并使用vue.use()安装js插件（安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。如果插件是一个函数，它会被作为 install 方法。install 方法将被作为 Vue 的参数调用。）
-	import ShineonScroll from 'scroll_me'
-	Vue.use(ShineonScroll)
+# 5.在路由中引入CFCMescroll,并使用vue.use()安装js插件（安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。如果插件是一个函数，它会被作为 install 方法。install 方法将被作为 Vue 的参数调用。）
+	import CFCMScroll from 'scroll_me'
+	Vue.use(CFCMScroll)
 # 6.定义scroll.vue文件如下（需要注意的是，使用方法一定要放到mounted方法里面）
 	<template>
 		<div>
